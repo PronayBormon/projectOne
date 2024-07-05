@@ -25,6 +25,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+
 .icon-ico-adobe:before {
   content: "\e957";
   color: #fff;
@@ -1311,4 +1313,8 @@
 .icon-youtobe:before {
   content: "\e916";
   color: #fff;
+}
+
+.icon-mining:before {
+  content: "\e933e";
 }

@@ -11963,8 +11963,8 @@ screen and (max-height: 300px) {
 }
 
 .dashboard .dashboard__content .dashboard__main .banner .content-list li p {
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 22px;
+  font-weight: 600;
   color: rgba(255, 255, 255, 0.5);
   margin-bottom: 0;
 }
@@ -12067,7 +12067,7 @@ screen and (max-height: 300px) {
   font-weight: 400;
   font-size: 16px;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.6);
+  color: #fff;
 }
 
 .dashboard .dashboard__content .dashboard__main .banner .banner-top__sale .sale-content .countdown__timer .countdown__item:nth-child(1)::after {
@@ -12333,7 +12333,7 @@ screen and (max-height: 300px) {
 }
 
 .dashboard.show .dashboard__content {
-  margin-left: 388px;
+  /* margin-left: 388px; */
 }
 
 @media only screen and (max-width: 1750px) {
@@ -15257,11 +15257,13 @@ screen and (max-height: 300px) {
   color: #fff;
   padding: 3px 20px;
   border: none;
-  border-radius: 20px;
+  border-radius: 50px;
   width: fit-content;
   display: flex;
   margin: 10px auto;
   margin-bottom: 0px;
+  padding: 14px 40px;
+  font-weight: 700;
 }
 
 @media(max-width:1400px) {
@@ -15411,7 +15413,7 @@ screen and (max-height: 300px) {
   padding-bottom: 10px;
 }
 
-.pricing_box .btn_boost {
+.pricing_box .btn_boost,.mechine .btn_boost {
   background: linear-gradient(216.56deg, #E250E5 5.32%, #4B50E6 94.32%);
   color: #fff;
   border: none;
@@ -15515,7 +15517,7 @@ screen and (max-height: 300px) {
   align-items: center;
   line-height: 16px;
   font-size: 16px;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
 }
 
 .btn_boost img {
@@ -15837,14 +15839,14 @@ screen and (max-height: 300px) {
 }
 
 .team_box h4 {
-    text-align: start;
-    font-size: 20px;
-    margin: 0px;
+  text-align: start;
+  font-size: 20px;
+  margin: 0px;
 }
 
 .team_box p {
-    font-size: 12px;
-    text-align: end;
+  font-size: 12px;
+  text-align: end;
 }
 
 .refer_members {}
@@ -15867,6 +15869,7 @@ screen and (max-height: 300px) {
 .member_left p {
   font-size: 16px;
   margin-right: 10px;
+  margin-bottom: 5px;
 }
 
 .member_desc {
@@ -15889,13 +15892,133 @@ screen and (max-height: 300px) {
 
 .member_desc span {
   font-size: 14px;
+  display: block;
+  margin: 0;
+  line-height: 16px;
 }
 
 .refer_members ul li strong {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .refer_members ul li strong span {}
-.refer_members ul li:last-child{
+
+.refer_members ul li:last-child {
   border: none;
+}
+
+@media(max-width: 768px) {
+  .team_container {
+    gap: 10px;
+  }
+}
+
+@media(max-width: 576px) {
+  .team_box h4 {
+    text-align: start;
+    font-size: 16px;
+    margin: 0px;
+  }
+}
+
+[class*="cicon-"] {
+  display: block;
+}
+
+[class*="cicon-"]::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-background-size: contain;
+}
+
+.cicon-axe {
+  position: relative;
+  background-image: url("../../assets/images/pickaxe.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.cicon-axe::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FF0000;
+  /* Change this to the desired color */
+  opacity: 0.5;
+  /* Adjust opacity as needed */
+}
+
+.loadMore.btn-action-outline {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  margin: auto;
+}
+
+
+.search_section {}
+
+.search_div {
+    display: flex;
+    align-items: center;
+}
+
+.input_form {
+    margin-right: 10px;
+}
+
+.input_form input {
+  margin: 0;
+}
+
+.search_div .btn-action {}
+.search_div p{
+  margin-right: 10px;
+}
+.buy_btns{
+
+}
+.buy_btns button{
+  background: linear-gradient(216.56deg, #E250E5 5.32%, #4B50E6 94.32%) !important;
+  color: #fff;
+  border: none;
+  margin-top: 10px;
+  margin: 10px auto;
+}
+
+.bg_main{
+  background-color: #14141f;
+}
+.btn-action.disabled{background: #adadad;}
+@media(max-width: 576px){
+  .input_form input {
+    margin: 0;
+    font-size: 12px;
+  }
+}
+
+.mechine img::after{
+  content: '';
+  background-image: url(../../assets/images/mining.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img_machine{position: relative;}
+.machine_ovelay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: .6;
+  display: none;
+}
+.img_machine.active .machine_ovelay{
+  display: block;
 }
