@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from themesflat.co/html/icolandhtml/sign-in.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 03 Jul 2024 12:32:21 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICOLand | ICO landing page & ICO Crypto HTML Template</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="app/dist/app.css">
+    <link
+    rel="stylesheet"
+    href="app/dist/swiper-bundle.min.css"
+    />
+    <!-- end Styles -->
+
+    <!-- Favicon and Touch Icons  -->
+    <link rel="shortcut icon" href="assets/images/logo/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/images/logo/favicon.png">
+</head>
+<body >
+
+    <!-- Preloading -->
+    <div class="preloader">
+        <div class=" loader">
+            <div class="square"></div>
+            <div class="path">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+          <p class="text-load">Loading :</p>
+        </div>
+    </div> 
+    <!-- End Preloading -->
+    
+    <!-- MAGIC CURSOR -->
+		<div class="mouse-cursor cursor-outer"></div>
+		<div class="mouse-cursor cursor-inner"></div>
+	<!-- /MAGIC CURSOR -->
+
+    <section class="sign-in">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="sign-in__top center">
+                        <a href="index.html">
+                            <img id="site-logo" src="assets/images/logo/logo-main.png"
+                            alt="Monteno" width="165" height="40"
+                            data-retina="assets/images/logo/logo-main@x2.png" data-width="165"
+                            data-height="40">
+                        </a>
+                    </div>
+                    <div class="sign-in__main">
+                        <div class="top center">
+                            <h3 class="title">Sign in</h3>
+                            <p class="fs-17">With your ICO Account</p>
+                        </div>
+
+                        <form>
+                            <div class="form-group">
+                              <label >Email address <span>*</span> </label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="example@gmail.com">
+                             
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleInputPassword1">Password<span>*</span></label>
+                              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                            <div class="form-check">
+                                <div class="left" style="height: 20px;">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                                </div>
+                                <p class="mb-0"><a href="forget-password.html">Forgot Your Password?</a></p>
+                            </div>
+                            
+                            <!-- chapcha  -->
+                            <div class="input_group">
+                                <div class="CaptchaWrap">
+                                    <div id="CaptchaImageCode" class="CaptchaTxtField">
+                                        <canvas id="CapCode" class="capcode" width="500" height="80"></canvas>
+                                    </div>
+                                    <button type="button"  class="ReloadBtn">
+                                        <img src="assets/images/refresh.webp" alt="" />
+                                    </button>
+                                </div>
+
+                                <input type="hidden" id="UserCaptchaCode" class="CaptchaTxtField form-control mt-2"
+                                    placeholder="Enter Captcha - Case Sensitive" />
+
+                                <input type="text" class="CaptchaTxtField form-control mt-2"
+                                    placeholder="Enter Captcha - Case Sensitive" v-model="userCapInput" />
+
+                                <span id="WrongCaptchaError" class="error">WrongCaptchaError</span>
+                            </div>
+                            
+                            <button type="submit" class="btn-action style-1"><span>Sign In</span> </button>
+                        </form>
+                        
+                    </div>
+
+                    <p class="bottom">Dont have an account? <a href="sign-up.html">Sign up</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="app/js/jquery.min.js"></script>
+    <script src="app/js/jquery.easing.js"></script>
+    <script src="app/js/app.js"></script>
+    <script src="app/js/mouse.js"></script>
+</body>
+
+<!-- Mirrored from themesflat.co/html/icolandhtml/sign-in.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 03 Jul 2024 12:32:21 GMT -->
+</html>
