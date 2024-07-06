@@ -56,7 +56,16 @@
             <li class="active"><a href="dashboard-mining.html"><span class="icon-token"></span>Mining</a></li>
             <li><a href="dashboard-pricing.html"><span class="icon-menu"></span>Pricing</a></li>
             <li><a href="dashboard-affiliate.html"><span class="icon-menu"></span>Affiliate</a></li>
-            <li><a href="dashboard-tradding.html"><span class="icon-menu"></span>Trading</a></li>
+            <li><a href="dashboard-tradding.html"><span class="fa-solid fa-chart-mixed"></span>Trading</a></li>
+            <li><a href="dashboard-wallet.html"><span class="fa-solid fa-chart-mixed"></span>Wallet</a></li>
+            <li>
+                <a href="#" class="feat-btn"><span class="fa-solid fa-address-card"></span>Account</a>
+                <ul class="feat-show">
+                    <li><a href="dashboard-profile.html"><span class="fa-solid fa-user"></span>Personal details</a></li>
+                    <li><a href="dashboard-security.html"><span class="fa-solid fa-shield-keyhole"></span>Security</a></li>
+                    <li><a href="dashboard-security.html"><span class="fa-regular fa-id-badge"></span>KYC</a></li>
+                </ul>
+            </li>
             <li><a href="dashboard-features.html"><span class="icon-menu"></span>Our Feature</a></li>
             <li><a href="dashboard-roadmap.html"><span class="icon-map"></span>Road Map</a></li>
             <li><a href="dashboard-creations.html"><span class="icon-start"></span>Our Creations</a></li>
@@ -103,15 +112,23 @@
 
             <div class="dashboard__main">
                 <!-- market section start herer  -->
-                 <div class="market section-faq style-2 ">
+                <div class="market section-faq style-2 ">
                     <div class="faq__content">
                         <div class="flat-tabs">
                             <ul class="menu-tab">
-                                <li class="active"><h5>Cryptocurrency</h5></li>
-                                <li><h5>Currencies</h5></li>
-                                <li><h5>Stocks</h5></li>
-                                <li><h5>Commodities</h5></li>
-    
+                                <li class="active">
+                                    <h5>Cryptocurrency</h5>
+                                </li>
+                                <li>
+                                    <h5>Currencies</h5>
+                                </li>
+                                <li>
+                                    <h5>Stocks</h5>
+                                </li>
+                                <li>
+                                    <h5>Commodities</h5>
+                                </li>
+
                             </ul>
                             <div class="content-tab">
                                 <div class="content-inner flat-accordion" style="">
@@ -122,16 +139,150 @@
                                         <button class="mf_btns">Stocks</button>
                                         <button class="mf_btns">ETFs</button>
                                     </div>
+                                    <!-- TradingView Widget BEGIN -->
+                                    <div class="tradingview-widget-container">
+                                        <div class="tradingview-widget-container__widget"></div>
 
-                                    <table class="table table-dark tabe-responsive table_crypto">
+                                        <script type="text/javascript"
+                                            src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js"
+                                            async>
+                                                {
+                                                    "title": "Cryptocurrencies",
+                                                        "title_raw": "Cryptocurrencies",
+                                                            "title_link": "/markets/cryptocurrencies/prices-all/",
+                                                                "width": "100%",
+                                                                    "height": "100%",
+                                                                        "locale": "en",
+                                                                            "showSymbolLogo": true,
+                                                                                "symbolsGroups": [
+                                                                                    {
+                                                                                        "name": "Overview",
+                                                                                        "symbols": [
+                                                                                            {
+                                                                                                "name": "CRYPTOCAP:TOTAL"
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "BITSTAMP:BTCUSD"
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "BITSTAMP:ETHUSD"
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "FTX:SOLUSD"
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "BINANCE:AVAXUSD"
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "COINBASE:UNIUSD"
+                                                                                            }
+                                                                                        ]
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "Bitcoin",
+                                                                                        "symbols": [
+                                                                                            {
+                                                                                                "name": "BITSTAMP:BTCUSD"
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "COINBASE:BTCEUR"
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "COINBASE:BTCGBP"
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "BITFLYER:BTCJPY"
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "CME:BTC1!"
+                                                                                            }
+                                                                                        ]
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "Ethereum",
+                                                                                        "symbols": [
+                                                                                            {
+                                                                                                "name": "BITSTAMP:ETHUSD"
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "KRAKEN:ETHEUR"
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "COINBASE:ETHGBP"
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "BITFLYER:ETHJPY"
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "BINANCE:ETHBTC"
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "BINANCE:ETHUSDT"
+                                                                                            }
+                                                                                        ]
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "Solana",
+                                                                                        "symbols": [
+                                                                                            {
+                                                                                                "name": "FTX:SOLUSD"
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "BINANCE:SOLEUR"
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "COINBASE:SOLGBP"
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "BINANCE:SOLBTC"
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "HUOBI:SOLETH"
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "BINANCE:SOLUSDT"
+                                                                                            }
+                                                                                        ]
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "Uniswap",
+                                                                                        "symbols": [
+                                                                                            {
+                                                                                                "name": "COINBASE:UNIUSD"
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "KRAKEN:UNIEUR"
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "COINBASE:UNIGBP"
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "BINANCE:UNIBTC"
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "KRAKEN:UNIETH"
+                                                                                            },
+                                                                                            {
+                                                                                                "name": "BINANCE:UNIUSDT"
+                                                                                            }
+                                                                                        ]
+                                                                                    }
+                                                                                ],
+                                                                                    "colorTheme": "dark"
+                                                }
+                                            </script>
+                                    </div>
+                                    <!-- TradingView Widget END -->
+
+                                    <!-- <table class="table table-dark tabe-responsive table_crypto">
                                         <thead>
                                           <tr>
                                             <th scope="col">Name</th>
-                                            <th scope="col">Last</th>
                                             <th scope="col">Chg.</th>
                                             <th scope="col">Chg.%</th>
                                             <th scope="col">Vol.</th>
                                             <th scope="col">Time</th>
+                                            <th></th>
                                           </tr>
                                         </thead>
                                         <tbody>
@@ -139,33 +290,145 @@
                                             <td>
                                                 <img src="assets/images/crypto/icons8-bitcoin-80.png" alt="" class="img-fluid"> Bitcoin
                                             </td>
-                                            <td>56,496.0</td>
                                             <td class="text-success">+2,421.5</td>
                                             <td class="text-success">+4.48%</td>
                                             <td>106.38K	</td>
                                             <td>05:19:00</td>
+                                            <td>
+                                                <a type="button" class="btn-action style-1" data-bs-toggle="modal"
+                                                data-bs-target="#crypto">Trade</a>
+                                            </td>
                                           </tr>
                                           <tr>
                                             <td>
                                                 <img src="assets/images/crypto/icons8-ethereum-100.png" alt="" class="img-fluid"> Bitcoin
                                             </td>				
-
-                                            <td>1.0000</td>
                                             <td class="text-danger">-0.0003</td>
                                             <td class="text-danger">-0.03%</td>
                                             <td>1.18B	</td>
                                             <td>05:19:00</td>
+                                            <td>
+                                                <a type="button" class="btn-action style-1" data-bs-toggle="modal"
+                                                data-bs-target="#crypto">Trade</a>
+                                            </td>
                                           </tr>
                                         </tbody>
-                                    </table>
+                                    </table> -->
                                 </div>
                                 <div class="content-inner flat-accordion" style="display: none;">
                                     <div class="mfilter_buttons">
                                         <button class="mf_btns active">Majors</button>
                                         <button class="mf_btns">Local</button>
                                     </div>
-                                    
-                                    <table class="table table-dark tabe-responsive table_crypto">
+                                    <!-- TradingView Widget BEGIN -->
+                                    <div class="tradingview-widget-container">
+                                        <div class="tradingview-widget-container__widget"></div>
+                                        <script type="text/javascript"
+                                            src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js"
+                                            async>
+                                                {
+                                                    "title": "Currencies",
+                                                        "title_link": "/markets/currencies/rates-major/",
+                                                            "width": "100%",
+                                                                "height": "100%",
+                                                                    "locale": "en",
+                                                                        "showSymbolLogo": true,
+                                                                            "symbolsGroups": [
+                                                                                {
+                                                                                    "name": "Major",
+                                                                                    "symbols": [
+                                                                                        {
+                                                                                            "name": "FX_IDC:EURUSD",
+                                                                                            "displayName": "EUR to USD"
+                                                                                        },
+                                                                                        {
+                                                                                            "name": "FX_IDC:USDJPY",
+                                                                                            "displayName": "USD to JPY"
+                                                                                        },
+                                                                                        {
+                                                                                            "name": "FX_IDC:GBPUSD",
+                                                                                            "displayName": "GBP to USD"
+                                                                                        },
+                                                                                        {
+                                                                                            "name": "FX_IDC:AUDUSD",
+                                                                                            "displayName": "AUD to USD"
+                                                                                        },
+                                                                                        {
+                                                                                            "name": "FX_IDC:USDCAD",
+                                                                                            "displayName": "USD to CAD"
+                                                                                        },
+                                                                                        {
+                                                                                            "name": "FX_IDC:USDCHF",
+                                                                                            "displayName": "USD to CHF"
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "name": "Minor",
+                                                                                    "symbols": [
+                                                                                        {
+                                                                                            "name": "FX_IDC:EURGBP",
+                                                                                            "displayName": "EUR to GBP"
+                                                                                        },
+                                                                                        {
+                                                                                            "name": "FX_IDC:EURJPY",
+                                                                                            "displayName": "EUR to JPY"
+                                                                                        },
+                                                                                        {
+                                                                                            "name": "FX_IDC:GBPJPY",
+                                                                                            "displayName": "GBP to JPY"
+                                                                                        },
+                                                                                        {
+                                                                                            "name": "FX_IDC:CADJPY",
+                                                                                            "displayName": "CAD to JPY"
+                                                                                        },
+                                                                                        {
+                                                                                            "name": "FX_IDC:GBPCAD",
+                                                                                            "displayName": "GBP to CAD"
+                                                                                        },
+                                                                                        {
+                                                                                            "name": "FX_IDC:EURCAD",
+                                                                                            "displayName": "EUR to CAD"
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "name": "Exotic",
+                                                                                    "symbols": [
+                                                                                        {
+                                                                                            "name": "FX_IDC:USDSEK",
+                                                                                            "displayName": "USD to SEK"
+                                                                                        },
+                                                                                        {
+                                                                                            "name": "FX_IDC:USDMXN",
+                                                                                            "displayName": "USD to MXN"
+                                                                                        },
+                                                                                        {
+                                                                                            "name": "FX_IDC:USDZAR",
+                                                                                            "displayName": "USD to ZAR"
+                                                                                        },
+                                                                                        {
+                                                                                            "name": "FX_IDC:EURTRY",
+                                                                                            "displayName": "EUR to TRY"
+                                                                                        },
+                                                                                        {
+                                                                                            "name": "FX_IDC:EURNOK",
+                                                                                            "displayName": "EUR to NOK"
+                                                                                        },
+                                                                                        {
+                                                                                            "name": "FX_IDC:GBPPLN",
+                                                                                            "displayName": "GBP to PLN"
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ],
+                                                                                "colorTheme": "dark"
+                                                }
+                                            </script>
+                                    </div>
+                                    <!-- TradingView Widget END -->
+
+                                    <!-- <table class="table table-dark tabe-responsive table_crypto">
                                         <thead>
                                           <tr>
                                             <th scope="col">Name</th>
@@ -200,7 +463,7 @@
                                             <td>05/07</td>
                                           </tr>
                                         </tbody>
-                                    </table>                                                   
+                                    </table>                                                    -->
                                 </div>
                                 <div class="content-inner flat-accordion" style="display: none;">
                                     <div class="mfilter_buttons">
@@ -213,42 +476,106 @@
                                         <button class="mf_btns">Dow Jones</button>
                                         <button class="mf_btns">S&P 500</button>
                                     </div>
-                                    <table class="table table-dark tabe-responsive table_crypto">
-                                        <thead>
-                                          <tr>
-                                            <th scope="col">Name</th>
-                                            <th scope="col">Last</th>
-                                            <th scope="col">High</th>
-                                            <th scope="col">Low</th>
-                                            <th scope="col">Chg.</th>
-                                            <th scope="col">Chg.%</th>
-                                            <th scope="col">Vol.</th>
-                                            <th scope="col">Time</th>
-                                          </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                            <td>Tesla</td>
-                                            <td>251.52</td>
-                                            <td>252.37</td>
-                                            <td>242.46</td>
-                                            <td class="text-success">+5.26</td>
-                                            <td class="text-success">+2.13%</td>
-                                            <td>149.01M	</td>
-                                            <td>05/07</td>
-                                          </tr>
-                                          <tr>
-                                            <td>NVIDIA</td>
-                                            <td>125.82</td>
-                                            <td>128.85</td>
-                                            <td>125.68</td>
-                                            <td class="text-danger">-2.46</td>
-                                            <td class="text-danger">-1.92%</td>
-                                            <td>188.96M</td>
-                                            <td>05/07</td>
-                                          </tr>
-                                        </tbody>
-                                    </table>                                           
+                                    <!-- TradingView Widget BEGIN -->
+                                    <div class="tradingview-widget-container">
+                                        <div class="tradingview-widget-container__widget"></div>
+                                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
+                                        {
+                                        "title": "Stocks",
+                                        "width": "100%",
+                                        "height": "100%",
+                                        "locale": "en",
+                                        "showSymbolLogo": true,
+                                        "symbolsGroups": [
+                                        {
+                                            "name": "Financial",
+                                            "symbols": [
+                                            {
+                                                "name": "NYSE:JPM",
+                                                "displayName": "JPMorgan Chase"
+                                            },
+                                            {
+                                                "name": "NYSE:WFC",
+                                                "displayName": "Wells Fargo Co New"
+                                            },
+                                            {
+                                                "name": "NYSE:BAC",
+                                                "displayName": "Bank Amer Corp"
+                                            },
+                                            {
+                                                "name": "NYSE:HSBC",
+                                                "displayName": "Hsbc Hldgs Plc"
+                                            },
+                                            {
+                                                "name": "NYSE:C",
+                                                "displayName": "Citigroup Inc"
+                                            },
+                                            {
+                                                "name": "NYSE:MA",
+                                                "displayName": "Mastercard Incorporated"
+                                            }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Technology",
+                                            "symbols": [
+                                            {
+                                                "name": "NASDAQ:AAPL",
+                                                "displayName": "Apple"
+                                            },
+                                            {
+                                                "name": "NASDAQ:GOOGL",
+                                                "displayName": "Alphabet"
+                                            },
+                                            {
+                                                "name": "NASDAQ:MSFT",
+                                                "displayName": "Microsoft"
+                                            },
+                                            {
+                                                "name": "NASDAQ:FB",
+                                                "displayName": "Meta Platforms"
+                                            },
+                                            {
+                                                "name": "NYSE:ORCL",
+                                                "displayName": "Oracle Corp"
+                                            },
+                                            {
+                                                "name": "NASDAQ:INTC",
+                                                "displayName": "Intel Corp"
+                                            }
+                                            ]
+                                        },
+                                        {
+                                            "name": "Services",
+                                            "symbols": [
+                                            {
+                                                "name": "NASDAQ:AMZN",
+                                                "displayName": "Amazon"
+                                            },
+                                            {
+                                                "name": "NYSE:BABA",
+                                                "displayName": "Alibaba Group Hldg Ltd"
+                                            },
+                                            {
+                                                "name": "NYSE:T",
+                                                "displayName": "At&t Inc"
+                                            },
+                                            {
+                                                "name": "NYSE:WMT",
+                                                "displayName": "Walmart"
+                                            },
+                                            {
+                                                "name": "NYSE:V",
+                                                "displayName": "Visa"
+                                            }
+                                            ]
+                                        }
+                                        ],
+                                        "colorTheme": "dark"
+                                    }
+                                        </script>
+                                    </div>
+                                    <!-- TradingView Widget END -->
                                 </div>
                                 <div class="content-inner flat-accordion" style="display: none;">
                                     <div class="mfilter_buttons">
@@ -258,22 +585,22 @@
                                         <button class="mf_btns">Stocks</button>
                                         <button class="mf_btns">ETFs</button>
                                     </div>
-                                    
+
                                     <table class="table table-dark tabe-responsive table_crypto">
                                         <thead>
-                                          <tr>
-                                            <th scope="col">Name</th>
-                                            <th scope="col">Month</th>
-                                            <th scope="col">Last</th>
-                                            <th scope="col">High</th>
-                                            <th scope="col">Low</th>
-                                            <th scope="col">Chg.</th>
-                                            <th scope="col">Chg.%</th>
-                                            <th scope="col">Time</th>
-                                          </tr>
+                                            <tr>
+                                                <th scope="col">Name</th>
+                                                <th scope="col">Month</th>
+                                                <th scope="col">Last</th>
+                                                <th scope="col">High</th>
+                                                <th scope="col">Low</th>
+                                                <th scope="col">Chg.</th>
+                                                <th scope="col">Chg.%</th>
+                                                <th scope="col">Time</th>
+                                            </tr>
                                         </thead>
                                         <tbody>
-                                            
+
                                             <tr>
                                                 <td>Gold</td>
                                                 <td>Aug 24</td>
@@ -295,16 +622,58 @@
                                                 <td>05/07</td>
                                             </tr>
                                         </tbody>
-                                    </table>                                         
+                                    </table>
                                 </div>
                             </div>
                         </div>
                     </div>
-                 </div>
+                </div>
             </div>
         </div>
     </div>
 
+    <!-- crypto trade modal  -->
+    <div class="modal fade" id="crypto" tabindex="-1" aria-labelledby="cryptoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-0">
+                <div class="modal-header py-0">
+                    <div class="w-10"> </div>
+                    <h5 class="modal-title fs-6" id="cryptoLabel"></h5>
+                    <div data-bs-theme="dark">
+                        <button type="button" class="btn_close text-white" data-bs-dismiss="modal" aria-label="Close"><i
+                                class="fas fa-times"></i></button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="boost_form">
+                        <div class="top_balance top">
+                            <p>Your USDT balance</p>
+                            <h4 class="text-center"><img src="assets/images/usdt.png" alt=""
+                                    class="img-fluid img_g_coin"> 2500</h4>
+                        </div>
+                    </div>
+                    <div class="trand_details">
+                        <p>Min crypto trade <strong>1USDT</strong></p>
+
+                        <form action="" class="trade_form">
+                            <label for="">Select duration</label>
+                            <select name="" id="" class="form-control">
+                                <option value="1">1 day</option>
+                                <option value="3" selected>3 days</option>
+                                <option value="7">1 week</option>
+                                <option value="15">15 days</option>
+                                <option value="30">1 month</option>
+                                <option value="60">2 month</option>
+                            </select>
+                            <button class="btn-action style-1">Start trade bot</button>
+                        </form>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- =========== -->

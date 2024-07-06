@@ -11589,7 +11589,8 @@ screen and (max-height: 300px) {
 
 .dashboard .dashboard__sidebar .sidebar__menu li a span {
   margin-right: 10px;
-  font-size: 16px;
+  font-size: 18px;
+  width: 20px;
 }
 
 .dashboard .dashboard__sidebar .sidebar__menu li a.feat-btn::after {
@@ -11641,8 +11642,9 @@ screen and (max-height: 300px) {
 }
 
 .dashboard .dashboard__sidebar .sidebar__menu li ul li {
-  line-height: 42px;
+  line-height: 416px;
   border-top: none;
+  margin-bottom: 0px;
 }
 
 .dashboard .dashboard__sidebar .sidebar__menu li ul li a {
@@ -11651,6 +11653,7 @@ screen and (max-height: 300px) {
   padding-left: 90px;
   background: transparent !important;
   padding: 0px 48px;
+  line-height: 24px;
 }
 
 .dashboard .dashboard__sidebar .sidebar__menu li ul li a::before {
@@ -15639,7 +15642,7 @@ screen and (max-height: 300px) {
 .offcanvas-bottom {
   right: 0;
   left: 0;
-  height: 45vh;
+  height: 50vh;
   z-index: 1100;
 }
 
@@ -15987,7 +15990,7 @@ screen and (max-height: 300px) {
 
 .buy_btns {}
 
-.buy_btns button {
+.buy_btns button,.buy_btns a {
   background: linear-gradient(216.56deg, #E250E5 5.32%, #4B50E6 94.32%) !important;
   color: #fff;
   border: none;
@@ -16111,14 +16114,153 @@ screen and (max-height: 300px) {
   }
 }
 
-.table_crypto{
+.table_crypto {}
 
-}
 .table_crypto tr td {
   /* display: inline-block; */
   justify-content: center;
-  align-items:center;
+  align-items: center;
 }
-.table_crypto td img{
+
+.table_crypto td img {
   height: 20px;
 }
+
+.btn_confirm {
+  background: linear-gradient(216.56deg, #E250E5 5.32%, #4B50E6 94.32%) !important;
+  color: #fff;
+  border: none;
+  margin-top: 10px;
+}
+
+.bg_main {}
+
+@media(max-width: 768px) {
+  .buy_btns button,.buy_btns a {
+    background: linear-gradient(216.56deg, #E250E5 5.32%, #4B50E6 94.32%) !important;
+    color: #fff;
+    border: none;
+    margin-top: 10px;
+    margin: 10px auto;
+    font-size: 8px;
+    padding: 10px 30px !important;
+  }
+
+  .top_balance.top p {
+    font-size: 10px;
+  }
+
+  .top_balance.top h4 {
+    font-size: 20px;
+  }
+
+  .top .img_g_coin {
+    height: 25px !important;
+  }
+
+  .btn_confirm {
+    font-size: 10px;
+    padding: 10px 30px !important;
+  }
+
+  .bg_main {}
+}
+
+.select_member {}
+
+.select_member ul {}
+
+.select_member ul li {
+  border-bottom: 1px solid #e250e5;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.select_member li strong {}
+
+.select_member input {
+  display: none;
+}
+
+.select_member label {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 5px;
+}
+
+.list_title {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 5px;
+}
+
+.list_title strong {}
+
+.select_member input[type="radio"]:checked+label {
+  background-color: #b650e530;
+}
+
+.select_member ul li:last-child {
+  border: none;
+}
+
+.modal-content {
+
+  background-color: #14141F !important;
+}
+
+.table_crypto .btn-action.style-1 {
+  padding: 0px 0px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.trand_details {}
+
+.trand_details p {
+  text-align: center;
+  color: red;
+  font-size: 12px;
+}
+
+.trade_form {}
+
+.trade_form button {
+  padding: 10px 20px !important;
+  border: none;
+  margin-top: 15px !important;
+  margin: auto;
+}
+
+/* ===================== Trade vie ========== */
+.tradingview-widget-container iframe {
+  min-height: 50vh;
+}
+
+.wallet_container {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 20px;
+}
+
+.wallet_box {
+  border: 1px solid #e250e5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #00000078;
+}
+
+.wallet_box h4 {
+  display: flex;
+}
+
+.wallet_box h4 img {
+  height: 30px;
+  margin-right: 5px;
+}
+
+.wallet_box p {}
