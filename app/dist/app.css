@@ -15413,7 +15413,8 @@ screen and (max-height: 300px) {
   padding-bottom: 10px;
 }
 
-.pricing_box .btn_boost,.mechine .btn_boost {
+.pricing_box .btn_boost,
+.mechine .btn_boost {
   background: linear-gradient(216.56deg, #E250E5 5.32%, #4B50E6 94.32%);
   color: #fff;
   border: none;
@@ -15966,12 +15967,12 @@ screen and (max-height: 300px) {
 .search_section {}
 
 .search_div {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .input_form {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .input_form input {
@@ -15979,13 +15980,14 @@ screen and (max-height: 300px) {
 }
 
 .search_div .btn-action {}
-.search_div p{
+
+.search_div p {
   margin-right: 10px;
 }
-.buy_btns{
 
-}
-.buy_btns button{
+.buy_btns {}
+
+.buy_btns button {
   background: linear-gradient(216.56deg, #E250E5 5.32%, #4B50E6 94.32%) !important;
   color: #fff;
   border: none;
@@ -15993,32 +15995,130 @@ screen and (max-height: 300px) {
   margin: 10px auto;
 }
 
-.bg_main{
+.bg_main {
   background-color: #14141f;
 }
-.btn-action.disabled{background: #adadad;}
-@media(max-width: 576px){
+
+.btn-action.disabled {
+  background: #adadad;
+}
+
+@media(max-width: 576px) {
   .input_form input {
     margin: 0;
     font-size: 12px;
   }
 }
 
-.mechine img::after{
+.mechine img::after {
   content: '';
   background-image: url(../../assets/images/mining.gif);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.img_machine{position: relative;}
-.machine_ovelay{
+
+.img_machine {
+  position: relative;
+}
+
+.machine_ovelay {
   position: absolute;
   left: 0;
   top: 0;
   opacity: .6;
   display: none;
 }
-.img_machine.active .machine_ovelay{
+
+.img_machine.active .machine_ovelay {
   display: block;
+}
+
+.market.section-faq {
+  padding: 0;
+  background: transparent;
+}
+
+.mfilter_buttons {}
+
+.mf_btns {
+  padding: 3px 15px;
+  border-radius: 20px;
+  margin-right: 5px;
+  border: none;
+  background: #cecece;
+  transition: .4s all ease-in-out;
+  margin-bottom: 10px;
+}
+
+.mf_btns.active {
+  color: #e72aa0;
+  background: #c004de;
+  color: #fff;
+}
+
+@media(max-width: 768px) {
+  .banner-top.style-2 .banner-top__content .desc {
+    font-size: 20px;
+    margin-top: 10px;
+    padding-right: 0px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .home-nft .creation {
+    padding: 30px 0 75px;
+  }
+
+  .home-nft .about.style-2 {
+    padding: 20px 0 30px;
+  }
+
+  .document.style-1 {
+    padding: 30px 0;
+  }
+
+  .home-nft .section-faq.style-2 {
+    padding: 30px 0 144px;
+  }
+
+  .home-nft .join-now {
+    padding: 0 0 30px;
+  }
+}
+
+@media(max-width: 576px) {
+  .mf_btns {
+    padding: 2px 10px;
+    border-radius: 20px;
+    margin-right: 2px;
+    border: none;
+    background: #cecece;
+    transition: .4s all ease-in-out;
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+
+  .box-nft .box-nft__main .content {
+    padding: 10px;
+  }
+
+  .box-nft .box-nft__main .content .title {
+    font-size: 12px;
+  }
+
+  .box-nft {
+    padding: 18px;
+  }
+}
+
+.table_crypto{
+
+}
+.table_crypto tr td {
+  /* display: inline-block; */
+  justify-content: center;
+  align-items:center;
+}
+.table_crypto td img{
+  height: 20px;
 }
