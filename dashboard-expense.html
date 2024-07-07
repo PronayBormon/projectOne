@@ -16,7 +16,7 @@
     <!-- Favicon and Touch Icons  -->
     <link rel="shortcut icon" href="assets/images/logo/favicon.png">
     <link rel="apple-touch-icon-precomposed" href="assets/images/partner/favicon.html">
-    <link rel="stylesheet" href="app/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="app/fontawsome/css/all.min.css" />
 </head>
 
 <body class="dashboard show">
@@ -62,7 +62,8 @@
                 <a href="#" class="feat-btn"><span class="fa-solid fa-address-card"></span>Account</a>
                 <ul class="feat-show">
                     <li><a href="dashboard-profile.html"><span class="fa-solid fa-user"></span>Personal details</a></li>
-                    <li><a href="dashboard-security.html"><span class="fa-solid fa-shield-keyhole"></span>Security</a></li>
+                    <li><a href="dashboard-security.html"><span class="fa-solid fa-shield-keyhole"></span>Security</a>
+                    </li>
                     <li><a href="dashboard-security.html"><span class="fa-regular fa-id-badge"></span>KYC</a></li>
                 </ul>
             </li>
@@ -71,7 +72,7 @@
             <li><a href="terms-conditions.html"><span class="icon-menu"></span>Terms & conditions</a></li>
             <li><a href="privacy-policy.html"><span class="icon-menu"></span>Privacy & policy</a></li>
             <li><a href="faq.html"><span class="icon-faqs"></span>FaQs</a></li>
-            
+
         </ul>
 
         <div class="bottom">
@@ -101,33 +102,37 @@
 
             <div class="dashboard__main">
                 <div class="affiliate_section">
-                    <div class="top_affi_balance mb-3">
-                        <h1>All</h1>
-                        <p>Team : 3002</p>
-                        <span>$1,249.03</span>
-                    </div>
-                    <!--refere members list  -->
+                    <!--Expense History list  -->
                     <div class="refer_members">
-                        <h4>Reffered members list</h4>
-
+                        <h4>Expense History</h4>
                         <div class="search_section">
                             <form action="">
                                 <div class="search_div">
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <div class="input_form mb-2 m-0">
-                                                <input type="text" placeholder="Search by user name"
-                                                    class="form-control">
+                                            <div class=" d-flex align-items-center w-100">
+                                                <div class="input_form w-100">
+                                                    <input type="text" placeholder="Search TRX id" class="form-control mb-2">
+                                                </div>
+                                                <div class="input_form w-100 m-0">
+                                                    <select name="" id="" class="form-control mb-2">
+                                                        <option value="" disabled selected>Select type</option>
+                                                        <option value="">type 2</option>
+                                                        <option value="">type 3</option>
+                                                        <option value="">type 4</option>
+                                                    </select>
+                                                </div>
+
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class=" d-flex align-items-center w-100">
                                                 <div class="input_form w-100">
-                                                    <input type="date" class="form-control">
+                                                    <input type="date" class="form-control mb-2">
                                                 </div>
                                                 <p>TO</p>
                                                 <div class="input_form w-100 m-0">
-                                                    <input type="date" class="form-control">
+                                                    <input type="date" class="form-control mb-2">
                                                 </div>
 
                                             </div>
@@ -136,29 +141,77 @@
                                 </div>
                             </form>
                         </div>
-                        <ul>
-                            <li>
-                                <strong>Name </strong>
-                                <strong>Reg. Date</strong>
-                                <strong>Profit</strong>
-                            </li>
-                            <li>
-                                <div class="member_left">
-                                    <div class="member_desc">
-                                        <!-- <img src="assets/images/avt/team-01.jpg" alt="" class="img-fluid"> -->
-                                        <div>
-                                            <p>abc@mail.com</p>
-                                            <span>MID 234234234</span>
-                                            <span>Leve 1</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <strong><span>
-                                        07/05/2024 <br> 12:06:00 </span></strong>
-                                <strong><span class="text-success">+923423</span> USDT</strong>
-                            </li>
-
-                        </ul>
+                        <div class="table-responsive">
+                            <table class="table table-hover table-dark table-striped table-hover">
+                                <thead class="">
+                                    <tr>
+                                        <th class="col">TRX id</th>
+                                        <th>Date & Time</th>
+                                        <th>Expense Type</th>
+                                        <th>Description</th>
+                                        <th>Remark</th>
+                                        <th>Amount</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>TRX8784345</td>
+                                        <td>07/08/2024 <br> 12:12:12</td>
+                                        <td>Buy machine</td>
+                                        <td>Description Lorem ipsum dolor sit amet.</td>
+                                        <td>Buy for Own</td>
+                                        <td>100 USDT</td>
+                                        <td><span class="text-danger">Pending</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>TRX8784345</td>
+                                        <td>07/08/2024 <br> 12:12:12</td>
+                                        <td>Buy machine</td>
+                                        <td>Description Lorem ipsum dolor sit amet.</td>
+                                        <td>Buy for Own</td>
+                                        <td>100 USDT</td>
+                                        <td><span class="text-success">Approve</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>TRX8784345</td>
+                                        <td>07/08/2024 <br> 12:12:12</td>
+                                        <td>Buy machine</td>
+                                        <td>Description Lorem ipsum dolor sit amet.</td>
+                                        <td>Buy for Own</td>
+                                        <td>100 USDT</td>
+                                        <td><span class="text-success">Approve</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>TRX8784345</td>
+                                        <td>07/08/2024 <br> 12:12:12</td>
+                                        <td>Buy machine</td>
+                                        <td>Description Lorem ipsum dolor sit amet.</td>
+                                        <td>Buy for Own</td>
+                                        <td>100 USDT</td>
+                                        <td><span class="text-success">Approve</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>TRX8784345</td>
+                                        <td>07/08/2024 <br> 12:12:12</td>
+                                        <td>Buy machine</td>
+                                        <td>Description Lorem ipsum dolor sit amet.</td>
+                                        <td>Buy for Own</td>
+                                        <td>100 USDT</td>
+                                        <td><span class="text-success">Approve</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>TRX8784345</td>
+                                        <td>07/08/2024 <br> 12:12:12</td>
+                                        <td>Buy machine</td>
+                                        <td>Description Lorem ipsum dolor sit amet.</td>
+                                        <td>Buy for Own</td>
+                                        <td>100 USDT</td>
+                                        <td><span class="text-success">Approve</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                         <a class="loadMore mt-3 btn-action-outline style-3" href="#">
                             <span>Load more</span>
                         </a>
