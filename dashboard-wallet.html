@@ -57,7 +57,8 @@
             <li><a href="dashboard-pricing.html"><span class="fa-solid fa-file-invoice-dollar"></span>Pricing</a></li>
             <li><a href="dashboard-affiliate.html"><span class="fa-solid fa-users"></span>Affiliate</a></li>
             <li><a href="dashboard-tradding.html"><span class="fa-solid fa-chart-mixed"></span>Trading</a></li>
-            <li><a href="dashboard-wallet.html"><span class="fa-solid fa-chart-mixed"></span>Wallet</a></li>
+            <li><a href="dashboard-wallet.html"><span class="fa-solid fa-wallet"></span>Wallet</a></li>
+            <li><a href="dashboard-payment.html"><span class="fa-regular fa-credit-card"></span>Payment</a></li>
             <li>
                 <a href="#" class="feat-btn"><span class="fa-solid fa-address-card"></span>Account</a>
                 <ul class="feat-show">
@@ -107,7 +108,7 @@
                 <a href="#" class="user">
                     <img src="assets/images/avt/admin.jpg" alt="ICOLand">
                 </a>
-                <a href="#" class="btn-action-outline style-5"><span class="icon-wallet"></span><span
+                <a href="dashboard-wallet.html" class="btn-action-outline style-5"><span class="icon-wallet"></span><span
                         class="d-md-inline-block d-none">Wallet</span></a>
             </div>
 
@@ -129,8 +130,10 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="d-flex justify-content-start align-items-center buy_btns">
-                            <a class="btn-action style-5 btn_boost mx-0 me-2" data-bs-dismiss="modal" aria-label="Close">Deposit</a>
-                            <a class="btn-action style-5 btn_boost mx-0" data-bs-toggle="offcanvas" data-bs-target="#bot_confirm" aria-controls="bot_confirm">Withdraw</a>
+                            <a class="btn-action style-5 btn_boost mx-0 me-2"  data-bs-toggle="offcanvas"
+                            data-bs-target="#deposit_" aria-controls="deposit_">Deposit</a>
+
+                            <a href="dashboard-withdraw.html" class="btn-action style-5 btn_boost mx-0" >Withdraw</a>
                         </div>
                     </div>
                 </div>
@@ -271,6 +274,28 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- deposit offcanvas  -->
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="deposit_" aria-labelledby="deposit_Label">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="mininge_confirmLabel"></h5>
+            <button type="button" class="btn_close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                    class="fas fa-times"></i></button>
+        </div>
+        <div class="offcanvas-body small pt-0">
+            <div class="row">
+                <div class="col-md-4 m-auto">
+                    <form action="" class="withdraw_form">
+                        
+                        <div class="input_form mb-2 m-0">
+                            <label for="amount" class="mb-2">Enter Deposit Amount</label>
+                            <input type="text" id="amount" placeholder="00.00" class="form-control">
+                        </div>
+                        <button class="btn-action style-5 btn_confirm btn_deposit_confirm" data-bs-dismiss="modal" aria-label="Close">Confirm</button>
+                    </form>
                 </div>
             </div>
         </div>

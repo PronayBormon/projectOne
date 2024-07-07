@@ -10,13 +10,14 @@
     <title>ICOLand | ICO landing page & ICO Crypto HTML Template</title>
 
     <!-- Styles -->
+    <link rel="stylesheet" href="app/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="app/dist/app.css">
     <!-- end Styles -->
 
     <!-- Favicon and Touch Icons  -->
     <link rel="shortcut icon" href="assets/images/logo/favicon.png">
     <link rel="apple-touch-icon-precomposed" href="assets/images/partner/favicon.html">
-    <link rel="stylesheet" href="app/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="app/fontawsome/css/all.min.css" />
 </head>
 
 <body class="dashboard show">
@@ -53,11 +54,13 @@
             <a href="index.html"><img src="assets/images/logo/logo.png" alt="ICOLand"></a>
         </div>
         <ul class="sidebar__menu">
-            <li class="active"><a href="dashboard-mining.html"><span class="icon-token"></span>Mining</a></li>
-            <li><a href="dashboard-pricing.html"><span class="icon-menu"></span>Pricing</a></li>
-            <li><a href="dashboard-affiliate.html"><span class="icon-menu"></span>Affiliate</a></li>
+            
+            <li class="active"><a href="dashboard-mining.html"><span class="fa-solid fa-pickaxe"></span>Mining</a></li>
+            <li><a href="dashboard-pricing.html"><span class="fa-solid fa-file-invoice-dollar"></span>Pricing</a></li>
+            <li><a href="dashboard-affiliate.html"><span class="fa-solid fa-users"></span>Affiliate</a></li>
             <li><a href="dashboard-tradding.html"><span class="fa-solid fa-chart-mixed"></span>Trading</a></li>
-            <li><a href="dashboard-wallet.html"><span class="fa-solid fa-chart-mixed"></span>Wallet</a></li>
+            <li><a href="dashboard-wallet.html"><span class="fa-solid fa-wallet"></span>Wallet</a></li>
+            <li><a href="dashboard-payment.html"><span class="fa-regular fa-credit-card"></span>Payment</a></li>
             <li>
                 <a href="#" class="feat-btn"><span class="fa-solid fa-address-card"></span>Account</a>
                 <ul class="feat-show">
@@ -110,570 +113,250 @@
                         class="d-md-inline-block d-none">Wallet</span></a>
             </div>
 
-            <div class="dashboard__main">
-                <!-- market section start herer  -->
-                <div class="market section-faq style-2 ">
-                    <div class="faq__content">
-                        <div class="flat-tabs">
-                            <ul class="menu-tab">
-                                <li class="active">
-                                    <h5>Cryptocurrency</h5>
-                                </li>
-                                <li>
-                                    <h5>Currencies</h5>
-                                </li>
-                                <li>
-                                    <h5>Stocks</h5>
-                                </li>
-                                <li>
-                                    <h5>Commodities</h5>
-                                </li>
-
-                            </ul>
-                            <div class="content-tab">
-                                <div class="content-inner flat-accordion" style="">
-                                    <div class="mfilter_buttons">
-                                        <button class="mf_btns active">Majors</button>
-                                        <button class="mf_btns">Top gainer</button>
-                                        <button class="mf_btns">Top losers</button>
-                                        <button class="mf_btns">Stocks</button>
-                                        <button class="mf_btns">ETFs</button>
-                                    </div>
-                                    <!-- TradingView Widget BEGIN -->
-                                    <div class="tradingview-widget-container">
-                                        <div class="tradingview-widget-container__widget"></div>
-
-                                        <script type="text/javascript"
-                                            src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js"
-                                            async>
-                                                {
-                                                    "title": "Cryptocurrencies",
-                                                        "title_raw": "Cryptocurrencies",
-                                                            "title_link": "/markets/cryptocurrencies/prices-all/",
-                                                                "width": "100%",
-                                                                    "height": "100%",
-                                                                        "locale": "en",
-                                                                            "showSymbolLogo": true,
-                                                                                "symbolsGroups": [
-                                                                                    {
-                                                                                        "name": "Overview",
-                                                                                        "symbols": [
-                                                                                            {
-                                                                                                "name": "CRYPTOCAP:TOTAL"
-                                                                                            },
-                                                                                            {
-                                                                                                "name": "BITSTAMP:BTCUSD"
-                                                                                            },
-                                                                                            {
-                                                                                                "name": "BITSTAMP:ETHUSD"
-                                                                                            },
-                                                                                            {
-                                                                                                "name": "FTX:SOLUSD"
-                                                                                            },
-                                                                                            {
-                                                                                                "name": "BINANCE:AVAXUSD"
-                                                                                            },
-                                                                                            {
-                                                                                                "name": "COINBASE:UNIUSD"
-                                                                                            }
-                                                                                        ]
-                                                                                    },
-                                                                                    {
-                                                                                        "name": "Bitcoin",
-                                                                                        "symbols": [
-                                                                                            {
-                                                                                                "name": "BITSTAMP:BTCUSD"
-                                                                                            },
-                                                                                            {
-                                                                                                "name": "COINBASE:BTCEUR"
-                                                                                            },
-                                                                                            {
-                                                                                                "name": "COINBASE:BTCGBP"
-                                                                                            },
-                                                                                            {
-                                                                                                "name": "BITFLYER:BTCJPY"
-                                                                                            },
-                                                                                            {
-                                                                                                "name": "CME:BTC1!"
-                                                                                            }
-                                                                                        ]
-                                                                                    },
-                                                                                    {
-                                                                                        "name": "Ethereum",
-                                                                                        "symbols": [
-                                                                                            {
-                                                                                                "name": "BITSTAMP:ETHUSD"
-                                                                                            },
-                                                                                            {
-                                                                                                "name": "KRAKEN:ETHEUR"
-                                                                                            },
-                                                                                            {
-                                                                                                "name": "COINBASE:ETHGBP"
-                                                                                            },
-                                                                                            {
-                                                                                                "name": "BITFLYER:ETHJPY"
-                                                                                            },
-                                                                                            {
-                                                                                                "name": "BINANCE:ETHBTC"
-                                                                                            },
-                                                                                            {
-                                                                                                "name": "BINANCE:ETHUSDT"
-                                                                                            }
-                                                                                        ]
-                                                                                    },
-                                                                                    {
-                                                                                        "name": "Solana",
-                                                                                        "symbols": [
-                                                                                            {
-                                                                                                "name": "FTX:SOLUSD"
-                                                                                            },
-                                                                                            {
-                                                                                                "name": "BINANCE:SOLEUR"
-                                                                                            },
-                                                                                            {
-                                                                                                "name": "COINBASE:SOLGBP"
-                                                                                            },
-                                                                                            {
-                                                                                                "name": "BINANCE:SOLBTC"
-                                                                                            },
-                                                                                            {
-                                                                                                "name": "HUOBI:SOLETH"
-                                                                                            },
-                                                                                            {
-                                                                                                "name": "BINANCE:SOLUSDT"
-                                                                                            }
-                                                                                        ]
-                                                                                    },
-                                                                                    {
-                                                                                        "name": "Uniswap",
-                                                                                        "symbols": [
-                                                                                            {
-                                                                                                "name": "COINBASE:UNIUSD"
-                                                                                            },
-                                                                                            {
-                                                                                                "name": "KRAKEN:UNIEUR"
-                                                                                            },
-                                                                                            {
-                                                                                                "name": "COINBASE:UNIGBP"
-                                                                                            },
-                                                                                            {
-                                                                                                "name": "BINANCE:UNIBTC"
-                                                                                            },
-                                                                                            {
-                                                                                                "name": "KRAKEN:UNIETH"
-                                                                                            },
-                                                                                            {
-                                                                                                "name": "BINANCE:UNIUSDT"
-                                                                                            }
-                                                                                        ]
-                                                                                    }
-                                                                                ],
-                                                                                    "colorTheme": "dark"
-                                                }
-                                            </script>
-                                    </div>
-                                    <!-- TradingView Widget END -->
-
-                                    <!-- <table class="table table-dark tabe-responsive table_crypto">
-                                        <thead>
-                                          <tr>
-                                            <th scope="col">Name</th>
-                                            <th scope="col">Chg.</th>
-                                            <th scope="col">Chg.%</th>
-                                            <th scope="col">Vol.</th>
-                                            <th scope="col">Time</th>
-                                            <th></th>
-                                          </tr>
-                                        </thead>
-                                        <tbody>
-                                          <tr>
-                                            <td>
-                                                <img src="assets/images/crypto/icons8-bitcoin-80.png" alt="" class="img-fluid"> Bitcoin
-                                            </td>
-                                            <td class="text-success">+2,421.5</td>
-                                            <td class="text-success">+4.48%</td>
-                                            <td>106.38K	</td>
-                                            <td>05:19:00</td>
-                                            <td>
-                                                <a type="button" class="btn-action style-1" data-bs-toggle="modal"
-                                                data-bs-target="#crypto">Trade</a>
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td>
-                                                <img src="assets/images/crypto/icons8-ethereum-100.png" alt="" class="img-fluid"> Bitcoin
-                                            </td>				
-                                            <td class="text-danger">-0.0003</td>
-                                            <td class="text-danger">-0.03%</td>
-                                            <td>1.18B	</td>
-                                            <td>05:19:00</td>
-                                            <td>
-                                                <a type="button" class="btn-action style-1" data-bs-toggle="modal"
-                                                data-bs-target="#crypto">Trade</a>
-                                            </td>
-                                          </tr>
-                                        </tbody>
-                                    </table> -->
-                                </div>
-                                <div class="content-inner flat-accordion" style="display: none;">
-                                    <div class="mfilter_buttons">
-                                        <button class="mf_btns active">Majors</button>
-                                        <button class="mf_btns">Local</button>
-                                    </div>
-                                    <!-- TradingView Widget BEGIN -->
-                                    <div class="tradingview-widget-container">
-                                        <div class="tradingview-widget-container__widget"></div>
-                                        <script type="text/javascript"
-                                            src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js"
-                                            async>
-                                                {
-                                                    "title": "Currencies",
-                                                        "title_link": "/markets/currencies/rates-major/",
-                                                            "width": "100%",
-                                                                "height": "100%",
-                                                                    "locale": "en",
-                                                                        "showSymbolLogo": true,
-                                                                            "symbolsGroups": [
-                                                                                {
-                                                                                    "name": "Major",
-                                                                                    "symbols": [
-                                                                                        {
-                                                                                            "name": "FX_IDC:EURUSD",
-                                                                                            "displayName": "EUR to USD"
-                                                                                        },
-                                                                                        {
-                                                                                            "name": "FX_IDC:USDJPY",
-                                                                                            "displayName": "USD to JPY"
-                                                                                        },
-                                                                                        {
-                                                                                            "name": "FX_IDC:GBPUSD",
-                                                                                            "displayName": "GBP to USD"
-                                                                                        },
-                                                                                        {
-                                                                                            "name": "FX_IDC:AUDUSD",
-                                                                                            "displayName": "AUD to USD"
-                                                                                        },
-                                                                                        {
-                                                                                            "name": "FX_IDC:USDCAD",
-                                                                                            "displayName": "USD to CAD"
-                                                                                        },
-                                                                                        {
-                                                                                            "name": "FX_IDC:USDCHF",
-                                                                                            "displayName": "USD to CHF"
-                                                                                        }
-                                                                                    ]
-                                                                                },
-                                                                                {
-                                                                                    "name": "Minor",
-                                                                                    "symbols": [
-                                                                                        {
-                                                                                            "name": "FX_IDC:EURGBP",
-                                                                                            "displayName": "EUR to GBP"
-                                                                                        },
-                                                                                        {
-                                                                                            "name": "FX_IDC:EURJPY",
-                                                                                            "displayName": "EUR to JPY"
-                                                                                        },
-                                                                                        {
-                                                                                            "name": "FX_IDC:GBPJPY",
-                                                                                            "displayName": "GBP to JPY"
-                                                                                        },
-                                                                                        {
-                                                                                            "name": "FX_IDC:CADJPY",
-                                                                                            "displayName": "CAD to JPY"
-                                                                                        },
-                                                                                        {
-                                                                                            "name": "FX_IDC:GBPCAD",
-                                                                                            "displayName": "GBP to CAD"
-                                                                                        },
-                                                                                        {
-                                                                                            "name": "FX_IDC:EURCAD",
-                                                                                            "displayName": "EUR to CAD"
-                                                                                        }
-                                                                                    ]
-                                                                                },
-                                                                                {
-                                                                                    "name": "Exotic",
-                                                                                    "symbols": [
-                                                                                        {
-                                                                                            "name": "FX_IDC:USDSEK",
-                                                                                            "displayName": "USD to SEK"
-                                                                                        },
-                                                                                        {
-                                                                                            "name": "FX_IDC:USDMXN",
-                                                                                            "displayName": "USD to MXN"
-                                                                                        },
-                                                                                        {
-                                                                                            "name": "FX_IDC:USDZAR",
-                                                                                            "displayName": "USD to ZAR"
-                                                                                        },
-                                                                                        {
-                                                                                            "name": "FX_IDC:EURTRY",
-                                                                                            "displayName": "EUR to TRY"
-                                                                                        },
-                                                                                        {
-                                                                                            "name": "FX_IDC:EURNOK",
-                                                                                            "displayName": "EUR to NOK"
-                                                                                        },
-                                                                                        {
-                                                                                            "name": "FX_IDC:GBPPLN",
-                                                                                            "displayName": "GBP to PLN"
-                                                                                        }
-                                                                                    ]
-                                                                                }
-                                                                            ],
-                                                                                "colorTheme": "dark"
-                                                }
-                                            </script>
-                                    </div>
-                                    <!-- TradingView Widget END -->
-
-                                    <!-- <table class="table table-dark tabe-responsive table_crypto">
-                                        <thead>
-                                          <tr>
-                                            <th scope="col">Name</th>
-                                            <th scope="col">Bit</th>
-                                            <th scope="col">Ask</th>
-                                            <th scope="col">High</th>
-                                            <th scope="col">Low</th>
-                                            <th scope="col">Chg.</th>
-                                            <th scope="col">Chg.%</th>
-                                            <th scope="col">Time</th>
-                                          </tr>
-                                        </thead>
-                                        <tbody>
-                                          <tr>
-                                            <td>EUR/USD</td>
-                                            <td>1.0837</td>
-                                            <td>1.0840</td>
-                                            <td>1.0843</td>
-                                            <td>1.0802</td>
-                                            <td class="text-success">+0.0029</td>
-                                            <td class="text-success">+0.26%</td>
-                                            <td>05/07</td>
-                                          </tr>
-                                          <tr>
-                                            <td>USD/JPY</td>
-                                            <td>160.73</td>
-                                            <td>160.76</td>
-                                            <td>161.40</td>
-                                            <td>160.34</td>
-                                            <td class="text-danger">-0.51</td>
-                                            <td class="text-danger">-0.31%</td>
-                                            <td>05/07</td>
-                                          </tr>
-                                        </tbody>
-                                    </table>                                                    -->
-                                </div>
-                                <div class="content-inner flat-accordion" style="display: none;">
-                                    <div class="mfilter_buttons">
-                                        <button class="mf_btns active">Trending Stocks</button>
-                                        <button class="mf_btns">Most Active</button>
-                                        <button class="mf_btns">Top Gainers</button>
-                                        <button class="mf_btns">Top Losers</button>
-                                        <button class="mf_btns">52 Week High</button>
-                                        <button class="mf_btns">52 Week Low</button>
-                                        <button class="mf_btns">Dow Jones</button>
-                                        <button class="mf_btns">S&P 500</button>
-                                    </div>
-                                    <!-- TradingView Widget BEGIN -->
-                                    <div class="tradingview-widget-container">
-                                        <div class="tradingview-widget-container__widget"></div>
-                                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
-                                        {
-                                        "title": "Stocks",
-                                        "width": "100%",
-                                        "height": "100%",
-                                        "locale": "en",
-                                        "showSymbolLogo": true,
-                                        "symbolsGroups": [
-                                        {
-                                            "name": "Financial",
-                                            "symbols": [
-                                            {
-                                                "name": "NYSE:JPM",
-                                                "displayName": "JPMorgan Chase"
-                                            },
-                                            {
-                                                "name": "NYSE:WFC",
-                                                "displayName": "Wells Fargo Co New"
-                                            },
-                                            {
-                                                "name": "NYSE:BAC",
-                                                "displayName": "Bank Amer Corp"
-                                            },
-                                            {
-                                                "name": "NYSE:HSBC",
-                                                "displayName": "Hsbc Hldgs Plc"
-                                            },
-                                            {
-                                                "name": "NYSE:C",
-                                                "displayName": "Citigroup Inc"
-                                            },
-                                            {
-                                                "name": "NYSE:MA",
-                                                "displayName": "Mastercard Incorporated"
-                                            }
-                                            ]
-                                        },
-                                        {
-                                            "name": "Technology",
-                                            "symbols": [
-                                            {
-                                                "name": "NASDAQ:AAPL",
-                                                "displayName": "Apple"
-                                            },
-                                            {
-                                                "name": "NASDAQ:GOOGL",
-                                                "displayName": "Alphabet"
-                                            },
-                                            {
-                                                "name": "NASDAQ:MSFT",
-                                                "displayName": "Microsoft"
-                                            },
-                                            {
-                                                "name": "NASDAQ:FB",
-                                                "displayName": "Meta Platforms"
-                                            },
-                                            {
-                                                "name": "NYSE:ORCL",
-                                                "displayName": "Oracle Corp"
-                                            },
-                                            {
-                                                "name": "NASDAQ:INTC",
-                                                "displayName": "Intel Corp"
-                                            }
-                                            ]
-                                        },
-                                        {
-                                            "name": "Services",
-                                            "symbols": [
-                                            {
-                                                "name": "NASDAQ:AMZN",
-                                                "displayName": "Amazon"
-                                            },
-                                            {
-                                                "name": "NYSE:BABA",
-                                                "displayName": "Alibaba Group Hldg Ltd"
-                                            },
-                                            {
-                                                "name": "NYSE:T",
-                                                "displayName": "At&t Inc"
-                                            },
-                                            {
-                                                "name": "NYSE:WMT",
-                                                "displayName": "Walmart"
-                                            },
-                                            {
-                                                "name": "NYSE:V",
-                                                "displayName": "Visa"
-                                            }
-                                            ]
-                                        }
-                                        ],
-                                        "colorTheme": "dark"
-                                    }
-                                        </script>
-                                    </div>
-                                    <!-- TradingView Widget END -->
-                                </div>
-                                <div class="content-inner flat-accordion" style="display: none;">
-                                    <div class="mfilter_buttons">
-                                        <button class="mf_btns active">Majors</button>
-                                        <button class="mf_btns">Top gainer</button>
-                                        <button class="mf_btns">Top losers</button>
-                                        <button class="mf_btns">Stocks</button>
-                                        <button class="mf_btns">ETFs</button>
-                                    </div>
-
-                                    <table class="table table-dark tabe-responsive table_crypto">
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">Name</th>
-                                                <th scope="col">Month</th>
-                                                <th scope="col">Last</th>
-                                                <th scope="col">High</th>
-                                                <th scope="col">Low</th>
-                                                <th scope="col">Chg.</th>
-                                                <th scope="col">Chg.%</th>
-                                                <th scope="col">Time</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-
-                                            <tr>
-                                                <td>Gold</td>
-                                                <td>Aug 24</td>
-                                                <td>2,399.85</td>
-                                                <td>2,401.40</td>
-                                                <td>2,356.65</td>
-                                                <td class="text-success">+30.45</td>
-                                                <td class="text-success">+1.29%</td>
-                                                <td>05/07</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Silver</td>
-                                                <td>Sep 24</td>
-                                                <td>31.525</td>
-                                                <td>31.782</td>
-                                                <td>30.470</td>
-                                                <td class="text-success">+0.683</td>
-                                                <td class="text-success">+2.21%</td>
-                                                <td>05/07</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
+            <div class="dashboard__main">                     
+                
+                <div class="tading_container">
+                    <div class="trading_box">
+                        <h4>Cryptocurrencies</h4>
+                        <a href="dashboard-crypto-trade.html">
+                            <img src="assets/images/tradding/cryptocurrency.png" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="trading_box">
+                        <h4>Currencies</h4>
+                        <a href="dashboard-currencies-trade.html">
+                            <img src="assets/images/tradding/forex.png" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="trading_box">
+                        <h4>Stocks</h4>
+                        <a href="dashboard-stocks-trade.html">
+                            <img src="assets/images/tradding/stocks.png" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="trading_box">
+                        <h4>Commodities</h4>
+                        <a href="dashboard-commodities-trade.html">
+                            <img src="assets/images/tradding/comidities.png" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="trade_history">
+                    <div class="d-flex justify-content-between align-items-end mb-3">
+                        <h1>Trade History</h1>
+                        <a href="#" class="btn-action style-1">View all </a>
+                    </div>
+                    <div class="table-responsive table_sec">
+                        <table class="table table-hover table-dark table-striped table-hover">
+                            <thead class="">
+                                <tr>
+                                    <th>Trade Type</th>
+                                    <th>Pair Name</th>
+                                    <th>Started on</th>
+                                    <th>Ending on</th>
+                                    <th>Trade amount</th>
+                                    <th>Profit %</th>
+                                    <th>Estd Profit</th>
+                                    <td></td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Cypto</td>
+                                    <td>BTC/USDT</td>
+                                    <td>07/07/2024 <br> 6:54:00</td>
+                                    <td>07/08/2024 <br> 6:54:00</td>
+                                    <td>100 USDT</td>
+                                    <td>10%</td>
+                                    <td>10 USDT</td>
+                                    <td>
+                                        <button class="btn_receipt" data-bs-toggle="offcanvas"
+                                        data-bs-target="#trade_details" aria-controls="trade_details"><i class="fa-sharp fa-regular fa-receipt"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Cypto</td>
+                                    <td>BTC/USDT</td>
+                                    <td>07/07/2024 <br> 6:54:00</td>
+                                    <td>07/08/2024 <br> 6:54:00</td>
+                                    <td>100 USDT</td>
+                                    <td>10%</td>
+                                    <td>10 USDT</td>
+                                    <td>
+                                        <button class="btn_receipt" data-bs-toggle="offcanvas"
+                                        data-bs-target="#trade_details" aria-controls="trade_details"><i class="fa-sharp fa-regular fa-receipt"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Cypto</td>
+                                    <td>BTC/USDT</td>
+                                    <td>07/07/2024 <br> 6:54:00</td>
+                                    <td>07/08/2024 <br> 6:54:00</td>
+                                    <td>100 USDT</td>
+                                    <td>10%</td>
+                                    <td>10 USDT</td>
+                                    <td>
+                                        <button class="btn_receipt" data-bs-toggle="offcanvas"
+                                        data-bs-target="#trade_details" aria-controls="trade_details"><i class="fa-sharp fa-regular fa-receipt"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Cypto</td>
+                                    <td>BTC/USDT</td>
+                                    <td>07/07/2024 <br> 6:54:00</td>
+                                    <td>07/08/2024 <br> 6:54:00</td>
+                                    <td>100 USDT</td>
+                                    <td>10%</td>
+                                    <td>10 USDT</td>
+                                    <td>
+                                        <button class="btn_receipt" data-bs-toggle="offcanvas"
+                                        data-bs-target="#trade_details" aria-controls="trade_details"><i class="fa-sharp fa-regular fa-receipt"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Cypto</td>
+                                    <td>BTC/USDT</td>
+                                    <td>07/07/2024 <br> 6:54:00</td>
+                                    <td>07/08/2024 <br> 6:54:00</td>
+                                    <td>100 USDT</td>
+                                    <td>10%</td>
+                                    <td>10 USDT</td>
+                                    <td>
+                                        <button class="btn_receipt" data-bs-toggle="offcanvas"
+                                        data-bs-target="#trade_details" aria-controls="trade_details"><i class="fa-sharp fa-regular fa-receipt"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Cypto</td>
+                                    <td>BTC/USDT</td>
+                                    <td>07/07/2024 <br> 6:54:00</td>
+                                    <td>07/08/2024 <br> 6:54:00</td>
+                                    <td>100 USDT</td>
+                                    <td>10%</td>
+                                    <td>10 USDT</td>
+                                    <td>
+                                        <button class="btn_receipt" data-bs-toggle="offcanvas"
+                                        data-bs-target="#trade_details" aria-controls="trade_details"><i class="fa-sharp fa-regular fa-receipt"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Cypto</td>
+                                    <td>BTC/USDT</td>
+                                    <td>07/07/2024 <br> 6:54:00</td>
+                                    <td>07/08/2024 <br> 6:54:00</td>
+                                    <td>100 USDT</td>
+                                    <td>10%</td>
+                                    <td>10 USDT</td>
+                                    <td>
+                                        <button class="btn_receipt" data-bs-toggle="offcanvas"
+                                        data-bs-target="#trade_details" aria-controls="trade_details"><i class="fa-sharp fa-regular fa-receipt"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Cypto</td>
+                                    <td>BTC/USDT</td>
+                                    <td>07/07/2024 <br> 6:54:00</td>
+                                    <td>07/08/2024 <br> 6:54:00</td>
+                                    <td>100 USDT</td>
+                                    <td>10%</td>
+                                    <td>10 USDT</td>
+                                    <td>
+                                        <button class="btn_receipt" data-bs-toggle="offcanvas"
+                                        data-bs-target="#trade_details" aria-controls="trade_details"><i class="fa-sharp fa-regular fa-receipt"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Cypto</td>
+                                    <td>BTC/USDT</td>
+                                    <td>07/07/2024 <br> 6:54:00</td>
+                                    <td>07/08/2024 <br> 6:54:00</td>
+                                    <td>100 USDT</td>
+                                    <td>10%</td>
+                                    <td>10 USDT</td>
+                                    <td>
+                                        <button class="btn_receipt" data-bs-toggle="offcanvas"
+                                        data-bs-target="#trade_details" aria-controls="trade_details"><i class="fa-sharp fa-regular fa-receipt"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Cypto</td>
+                                    <td>BTC/USDT</td>
+                                    <td>07/07/2024 <br> 6:54:00</td>
+                                    <td>07/08/2024 <br> 6:54:00</td>
+                                    <td>100 USDT</td>
+                                    <td>10%</td>
+                                    <td>10 USDT</td>
+                                    <td>
+                                        <button class="btn_receipt" data-bs-toggle="offcanvas"
+                                        data-bs-target="#trade_details" aria-controls="trade_details"><i class="fa-sharp fa-regular fa-receipt"></i></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- crypto trade modal  -->
-    <div class="modal fade" id="crypto" tabindex="-1" aria-labelledby="cryptoLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content rounded-0">
-                <div class="modal-header py-0">
-                    <div class="w-10"> </div>
-                    <h5 class="modal-title fs-6" id="cryptoLabel"></h5>
-                    <div data-bs-theme="dark">
-                        <button type="button" class="btn_close text-white" data-bs-dismiss="modal" aria-label="Close"><i
-                                class="fas fa-times"></i></button>
-                    </div>
-                </div>
-                <div class="modal-body">
-                    <div class="boost_form">
-                        <div class="top_balance top">
-                            <p>Your USDT balance</p>
-                            <h4 class="text-center"><img src="assets/images/usdt.png" alt=""
-                                    class="img-fluid img_g_coin"> 2500</h4>
-                        </div>
-                    </div>
-                    <div class="trand_details">
-                        <p>Min crypto trade <strong>1USDT</strong></p>
 
-                        <form action="" class="trade_form">
-                            <label for="">Select duration</label>
-                            <select name="" id="" class="form-control">
-                                <option value="1">1 day</option>
-                                <option value="3" selected>3 days</option>
-                                <option value="7">1 week</option>
-                                <option value="15">15 days</option>
-                                <option value="30">1 month</option>
-                                <option value="60">2 month</option>
-                            </select>
-                            <button class="btn-action style-1">Start trade bot</button>
-                        </form>
-                    </div>
-
-
+    <!-- history offcanvas  -->     
+    <div class="offcanvas offcanvas-bottom trade_history_table" tabindex="-1" id="trade_details" aria-labelledby="trade_detailsLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="mininge_confirmLabel"></h5>
+            <button type="button" class="btn_close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                    class="fas fa-times"></i></button>
+        </div>
+        <div class="offcanvas-body small pt-0">
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table-dark table">
+                        <tbody>
+                            <thead>          						
+                                <tr>
+                                    <td>Trade Type</td>
+                                    <td>Cypto</td>
+                                </tr>
+                                <tr>
+                                    <td>Pair Name</td>
+                                    <td>BTC/USDT</td>
+                                </tr>
+                                <tr>
+                                    <td>Started on</td>
+                                    <td>07/07/2024 <br>6:55:00 </td>
+                                </tr>
+                                <tr>
+                                    <td>Ending on</td>
+                                    <td>07/08/2024 <br> 6:54:00</td>
+                                </tr>
+                                <tr>
+                                    <td>Trade amount</td>
+                                    <td>100 USDT</td>
+                                </tr>
+                                <tr>
+                                    <td>Profit %</td>
+                                    <td>10%	</td>
+                                </tr>
+                                <tr>
+                                    <td>Estd Profit</td>
+                                    <td>10 USDT</td>
+                                </tr>
+                                <tr>
+                                    <td>Trading Fee</td>
+                                    <td>1 USDT</td>
+                                </tr>
+                                <tr>
+                                    <td>Net Profit</td>
+                                    <td>9 USDT</td>
+                                </tr>
+                            </thead>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
     </div>
+
 
 
     <!-- =========== -->

@@ -16,7 +16,7 @@
     <!-- Favicon and Touch Icons  -->
     <link rel="shortcut icon" href="assets/images/logo/favicon.png">
     <link rel="apple-touch-icon-precomposed" href="assets/images/partner/favicon.html">
-    <link rel="stylesheet" href="app/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="app/fontawsome/css/all.min.css" />
 </head>
 
 <body class="dashboard show">
@@ -53,9 +53,9 @@
             <a href="index.html"><img src="assets/images/logo/logo.png" alt="ICOLand"></a>
         </div>
         <ul class="sidebar__menu">
-            <li class="active"><a href="dashboard-mining.html"><span class="icon-token"></span>Mining</a></li>
-            <li><a href="dashboard-pricing.html"><span class="icon-menu"></span>Pricing</a></li>
-            <li><a href="dashboard-affiliate.html"><span class="icon-menu"></span>Affiliate</a></li>
+            <li class="active"><a href="dashboard-mining.html"><span class="fa-solid fa-pickaxe"></span>Mining</a></li>
+            <li><a href="dashboard-pricing.html"><span class="fa-solid fa-file-invoice-dollar"></span>Pricing</a></li>
+            <li><a href="dashboard-affiliate.html"><span class="fa-solid fa-users"></span>Affiliate</a></li>
             <li><a href="dashboard-tradding.html"><span class="fa-solid fa-chart-mixed"></span>Trading</a></li>
             <li><a href="dashboard-wallet.html"><span class="fa-solid fa-wallet"></span>Wallet</a></li>
             <li><a href="dashboard-payment.html"><span class="fa-regular fa-credit-card"></span>Payment</a></li>
@@ -108,72 +108,44 @@
                 <a href="#" class="user">
                     <img src="assets/images/avt/admin.jpg" alt="ICOLand">
                 </a>
-                <a href="#" class="btn-action-outline style-5"><span class="icon-wallet"></span><span
+                <a href="dashboard-wallet.html" class="btn-action-outline style-5"><span class="icon-wallet"></span><span
                         class="d-md-inline-block d-none">Wallet</span></a>
             </div>
 
             <div class="dashboard__main">
+                
                 <div class="row">
-                    <div class="col-md-6">
-                        <form action="">
-                            <div class="profile_">
-                                <h4>Password</h4>
-                                <ul class="profile_data">
-                                    <li>
-                                        <div class="personal_details">
-                                            <label for="">Old Password</label>
-                                            <input type="password" placeholder="Old Password"  class="form-control">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="personal_details">
-                                            <label for="">New password</label>
-                                            <input type="password" placeholder="New password" class="form-control">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="personal_details">
-                                            <label for="">Confirm password</label>
-                                            <input type="password" placeholder="Confirm password" class="form-control">
-                                        </div>
-                                    </li>
-                                </ul>
-                                <button type="submit" class="btn-action style-1">Update</button>
+                    <div class="col-md-6 m-auto">
+                        <a href="#" onclick="history.back(); return false;"><i class="fa-solid fa-arrow-left"></i></a>
+
+                        <form action="" class="withdraw_form">
+                            <p class="badge_"><i class="fa-solid fa-circle-exclamation"></i> Minimum withdraw
+                                $20</p>
+                            <div class="form_group">
+                                <p>Withdrawal Amount(max-withdraw: $3690.00)</p>
+                                <input type="text" placeholder="" class="form-control rounded-0">
+                                <span>Current amount : $3690.00</span>
                             </div>
-                        </form>
-                    </div>
-                    <div class="col-md-6">
-                        <form action="">
-                            <div class="profile_">
-                                <h4>Withdrawal Pin</h4>
-                                <ul class="profile_data">
-                                    <li>
-                                        <div class="personal_details">
-                                            <label for="">Old Pin</label>
-                                            <input type="password" placeholder="Old Pin" disabled class="form-control">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="personal_details">
-                                            <label for="">New Pin</label>
-                                            <input type="password" placeholder="New Pin" class="form-control">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="personal_details">
-                                            <label for="">Confirm Pin</label>
-                                            <input type="password" placeholder="Confirm Pin" class="form-control">
-                                        </div>
-                                    </li>
-                                </ul>
-                                <button type="submit" class="btn-action style-1">Update</button>
+                            <div class="form_group">
+                                <p>Withdrawal address</p>
+                                <select name="" id="" disabled class="form-control rounded-0">
+                                    <option value="" selected=""  >Select Bank Card</option>
+                                    <option value="" selected>16546444644</option> 
+                                </select>
                             </div>
+                            <div class="form_group">
+                                <p>Please Enter Withdrawal Pin</p>
+                                <input type="text" placeholder="" class="form-control rounded-0">
+                            </div>
+                            <button type="button" class="btn-action style-1 w-100 mt-3">Confirm Withdraw </button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
 
     <!-- =========== -->
     <script src="app/js/jquery.min.js"></script>
