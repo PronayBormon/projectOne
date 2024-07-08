@@ -16,7 +16,7 @@
     <!-- Favicon and Touch Icons  -->
     <link rel="shortcut icon" href="assets/images/logo/favicon.png">
     <link rel="apple-touch-icon-precomposed" href="assets/images/partner/favicon.html">
-    <link rel="stylesheet" href="../../../cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="app/fontawsome/css/all.min.css" />
 </head>
 
 <body class="dashboard show">
@@ -43,6 +43,8 @@
     <div class="mouse-cursor cursor-outer"></div>
     <div class="mouse-cursor cursor-inner"></div>
     <!-- /MAGIC CURSOR -->
+
+
 
     <div class="btn click d-lg-none"><span class="fas fa-bars"></span></div>
 
@@ -92,6 +94,7 @@
 
     <div class="dashboard_main_content">
         <div class="dashboard__content">
+
             <div class="dashboard__header">
                 <h4>M.P : 0.0000023</h4>
                 <a href="dashboard-profile.html" class="user">
@@ -100,121 +103,66 @@
                 <a href="dashboard-wallet.html" class="btn-action-outline style-5"><span
                         class="icon-wallet"></span><span class="d-md-inline-block d-none">Wallet</span></a>
             </div>
+
             <div class="dashboard__main">
                 
-                <div class="section-faq style-5 mb-0">
-                    <div class="faq__content">
-                        <div class="flat-tabs mt-0">
+                <div class="row">
+                    <div class="col-md-6 m-auto">
+                        <a href="#" onclick="history.back(); return false;"><i class="fa-solid fa-arrow-left"></i></a>
 
-                            <ul class="menu-tab">
-                                <li>
-                                    <h5><a href="dashboard-pricing.html">Dolphin Digger</a></h5>
-                                </li>
-                                <li>
-                                    <h5><a href="dashboard-shark-driller.html">Shark Driller</a></h5>
-                                </li>
-                                <li>
-                                    <h5><a href="dashboard-orca-drilmaster.html">Orca Drillmaster</a></h5>
-                                </li>
-                                <li class="active">
-                                    <h5><a href="dashboard-whale-excavator.html">Whale Excavator</a></h5>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                        <form action="" class="withdraw_form wth_confirm">
+                            <div class="badge_">Please fill in the following information and click "I PAID" after completing the transfer.</div>
 
-                <div class="pricing_section">
-                    <div class="pricing_box">
-                        <img src="assets/images/4.png" alt="" class="img-fluid">
-                        <h1>Whale Excavator</h1>
-                        <h4 class="price_">30 days</h4>
-                        <h4>$10.00</h4>
-                        <ul class="options">
-                            <li>Save $0.00</li>
-                            <li>max mining $13</li>
-                            <li>max mining 1 hour</li>
-                            <li>Live Support</li>
-                        </ul>
-                        <button class="btn-action-outline style-5">purchase</button>
-                    </div>
-                    <div class="pricing_box">
-                        <img src="assets/images/4.png" alt="" class="img-fluid">
-                        <h1>Whale Excavator</h1>
-                        <h4 class="price_">60 days</h4>
-                        <h4>$18.00</h4>
-                        <ul class="options">
-                            <li>Save $2.00</li>
-                            <li>max mining $13</li>
-                            <li>max mining 1 hour</li>
-                            <li>Live Support</li>
-                        </ul>
-                        <button class="btn-action-outline style-5">purchase</button>
-                    </div>
-                    <div class="pricing_box">
-                        <img src="assets/images/4.png" alt="" class="img-fluid">
-                        <h1>Whale Excavator</h1>
-                        <h4 class="price_">90 days</h4>
-                        <h4>$25.00</h4>
-                        <ul class="options">
-                            <li>Save $5.00</li>
-                            <li>max mining $13</li>
-                            <li>max mining 1 hour</li>
-                            <li>Live Support</li>
-                        </ul>
-                        <button class="btn-action-outline style-5">purchase</button>
-                    </div>
-                    <div class="pricing_box">
-                        <img src="assets/images/4.png" alt="" class="img-fluid">
-                        <h1>Whale Excavator</h1>
-                        <h4 class="price_">120 days</h4>
-                        <h4>$32.00</h4>
-                        <ul class="options">
-                            <li>Save $8.00</li>
-                            <li>max mining $13</li>
-                            <li>max mining 1 hour</li>
-                            <li>Live Support</li>
-                        </ul>
-                        <!-- <div class="mechine"> -->
-                        <span class="sm_timer">
-                            <strong>
-                                <div class="t_box">
-                                    20
+                            <img src="assets/images/qrcode.png" alt="" class="img-fluid qr_code">
+                            <div class="refer_body pb-0">
+                                <label for="">Address</label>
+                                <div class="input_bt_group">
+                                    <input type="text" disabled="" value="MpwSNTsadfasdfe2p1MGd4TQUiTZzqyp" class="form-control border-0 bg-transparent">
+                                    <button class="btn_copy"><i class="far fa-copy"></i></button>
                                 </div>
-                                <p>Hour</p>
-                            </strong>
-                            <strong>
-                                <div class="t_box">
-                                    20
+                                <label for="">Network</label>
+                                <div class="input_bt_group">
+                                    <input type="text" disabled="" value="TRX(TRC20)" class="form-control ">
                                 </div>
-                                <p>Hour</p>
-                            </strong>
-                            <strong>
-                                <div class="t_box">
-                                    10
+                                <label for="">USDT(TRC20) Address</label>
+                                <div class="input_bt_group">
+                                    <input type="text" placeholder="Address" class="form-control ">
                                 </div>
-                                <p>Minute</p>
-                            </strong>
-                            <strong>
-                                <div class="t_box">
-                                    10
+                                <label for="">Txn Hash</label>
+                                <div class="input_bt_group">
+                                    <input type="text" placeholder="Txn Hash" class="form-control ">
                                 </div>
-                                <p>Second</p>
-                            </strong>
-                        </span>
-                        <!-- </div> -->
-                        <button class="btn-action style-5 btn_boost">Boost</button>
+                            </div>
+
+                            <button type="button" class="btn-action style-1 w-100 mt-3">Confirm Withdraw </button>
+
+
+                            <div class="col mt-2 alert_">
+                                <p>Attentions:</p>
+                                <ul>
+                                    <li>Please check the latest address before transfer everytime. <span>It cannot be recovered if sending to wrong address.</span></li>
+                                    <li>Please confirm the type of digital currency and network before transfer. <span>transactions are irreversible once you've sent money to another.</span></li>
+                                    <li>Sending funds to the wrong address / digital currency have nothing to do with the platform.</li>
+                                    <li>Please key in the Address that sending from, Transaction Hash after completing the transfer.</li>
+                                </ul>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+
+
+    <!-- =========== -->
     <script src="app/js/jquery.min.js"></script>
+    <script src="app/bootstrap/css/bootstrap.min.js"></script>
     <script src="app/js/count-down.js"></script>
     <script src="app/js/app.js"></script>
     <script src="app/js/mouse.js"></script>
 
 </body>
+
 
 </html>

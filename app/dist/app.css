@@ -30,6 +30,7 @@ body {
   position: relative;
   overflow-x: hidden;
   color: #A09FAF;
+  background: #14141f;
 }
 
 :root {
@@ -11702,11 +11703,12 @@ screen and (max-height: 300px) {
   min-width: 36px;
   background: linear-gradient(216.56deg, rgba(226, 80, 229, 0.2) 5.32%, rgba(75, 80, 230, 0.2) 94.32%);
   border-radius: 8px;
-  margin-right: 12px;
+  margin-right: 0px;
   z-index: 9;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0px 3px;
 }
 
 .dashboard .dashboard__sidebar .bottom .list-social li a {
@@ -11745,7 +11747,7 @@ screen and (max-height: 300px) {
 }
 
 .dashboard .dashboard__sidebar .bottom p {
-  margin-top: 20px;
+  margin: 15px 0px;
 }
 
 .dashboard .dashboard__content {
@@ -15698,7 +15700,7 @@ screen and (max-height: 300px) {
 }
 
 .modal-body {
-  padding: 50px;
+  /* padding: 50px; */
 }
 
 .top_balance {
@@ -15867,7 +15869,7 @@ screen and (max-height: 300px) {
 }
 
 .team_box p {
-  font-size: 12px;
+  font-size: 18px;
   text-align: end;
 }
 
@@ -15938,7 +15940,7 @@ screen and (max-height: 300px) {
 @media(max-width: 576px) {
   .team_box h4 {
     text-align: start;
-    font-size: 16px;
+    font-size: 14px;
     margin: 0px;
   }
 }
@@ -16126,11 +16128,11 @@ screen and (max-height: 300px) {
   }
 
   .box-nft .box-nft__main .content .title {
-    font-size: 12px;
+    font-size: 22px;
   }
 
   .box-nft {
-    padding: 18px;
+    /* padding: 18px; */
   }
 }
 
@@ -16336,12 +16338,13 @@ color: #fff;
 .badge_ {
   text-align: center;
   padding: 5px;
-  background: #f44986;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(180deg, rgba(75, 20, 192, 0.2) 0%, rgba(196, 41, 221, 0.2) 100%);
   border-radius: 3px;
   margin-bottom: 10px !important;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #fff;
 }
 
 /* payment list ============= */
@@ -16733,7 +16736,7 @@ input[type="checkbox"] {
   }
 
   .bank_card.scaled {
-    margin-top: -180px;
+    /* margin-top: -180px; */
     transition: .4s all ease-in-out;
   }
 }
@@ -17396,7 +17399,7 @@ td .btn-action.style-5 {
 }
 
 .buy_popup {
-  min-height: 80vh;
+  min-height: 100vh;
 }
 
 .but_token_form {
@@ -17447,7 +17450,7 @@ td .btn-action.style-5 {
 
 .latest_buy {
   margin-top: 10px;
-  max-height: 150px;
+  max-height: 340px;
   overflow: auto;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(180deg, rgba(75, 20, 192, 0.2) 0%, rgba(196, 41, 221, 0.2) 100%);
   padding: 0px 6px;
@@ -17462,10 +17465,12 @@ td .btn-action.style-5 {
   background: #1d1134;
   padding-top: 10px;
 }
-.latest_buy::-webkit-scrollbar{
+
+.latest_buy::-webkit-scrollbar {
   display: none;
 }
-.congress_{
+
+.congress_ {
   font-size: 30px !important;
   line-height: 1.1;
   font-family: "Zen Dots", cursive;
@@ -17473,13 +17478,106 @@ td .btn-action.style-5 {
   text-transform: none;
   margin-bottom: 10px !important;
 }
-.congress_ strong span{
+
+.congress_ strong span {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #fff;
   -webkit-text-fill-color: rgba(0, 0, 0, 0);
 }
-@media(max-width: 768px){
-  .congress_{
-    font-size: 22px !important; 
+
+.withdraw_form button {
+  width: 100% !important;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media(max-width: 768px) {
+  .congress_ {
+    font-size: 22px !important;
   }
+}
+
+@media(max-width: 576px) {
+  .team_box p {
+    font-size: 14px;
+  }
+}
+
+.table>:not(caption)>*>* {
+  padding: .5rem .5rem;
+  background-color: #1b1133;
+  border-bottom-width: 1px;
+  box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+}
+
+.table-dark {
+  background: red;
+  --bs-table-bg: #212529;
+  --bs-table-striped-bg: #2c1337;
+  --bs-table-striped-color: #fff;
+  --bs-table-active-bg: #2c1337;
+  --bs-table-active-color: #fff;
+  --bs-table-hover-bg: #323539;
+  --bs-table-hover-color: #fff;
+  color: #fff;
+  border-color: #373b3e;
+}
+
+.loadMore {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.bank_card .progress {
+  border-radius: 20px;
+  height: 10px;
+}
+
+.bank_card .btn-action.style-1 {
+  border: 0;
+  padding: 10px 30px;
+  margin-top: 10px;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.bank_card.reward {
+  height: 250px;
+}
+
+.wth_confirm .btn_copy {
+  width: fit-content !important;
+  padding: 0 !important;
+}
+
+.wth_confirm .qr_code {
+  height: 200px;
+  width: 200px;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  background: #fff;
+}
+
+.alert_ {
+  margin-top: 18px !important;
+}
+
+.alert_ p {}
+
+.alert_ ul {
+  padding-left: 20px;
+}
+
+.alert_ ul li {
+  list-style: disc;
+}
+
+.alert_ ul li span {
+  color: #ff4581;
 }
