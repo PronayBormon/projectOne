@@ -66,7 +66,7 @@
                     <li><a href="dashboard-profile.html"><span class="fa-solid fa-user"></span>Personal details</a></li>
                     <li><a href="dashboard-security.html"><span class="fa-solid fa-shield-keyhole"></span>Security</a>
                     </li>
-                    <li><a href="dashboard-security.html"><span class="fa-regular fa-id-badge"></span>KYC</a></li>
+                    <li><a href="dashboard-kyc.html"><span class="fa-regular fa-id-badge"></span>KYC</a></li>
                 </ul>
             </li>
             <li><a href="about-us.html"><span class="icon-menu"></span>About us</a></li>
@@ -109,47 +109,54 @@
                             <div class="col-xl-12 col-md-12">
                                 <ul class="content-list">
                                     <li>
-                                        <!-- <div class="number">
-                                            <h3>01</h3>
-                                        </div> -->
                                         <h5>30 MILLION </h5>
                                         <p>Max Supply</p>
-                                        <div class="slidingText2">
-                                            <h3>CSS Animation </h3>
-                                        </div>
                                     </li>
                                     <li>
-                                        <!-- <div class="number">
-                                            <h3>01</h3>
-                                        </div> -->
                                         <h5>+4.5 MILLION</h5>
                                         <p>Total Supply</p>
-                                        <div class="slidingText2">
-                                            <h3>CSS Animation </h3>
-                                        </div>
                                     </li>
                                     <li>
-                                        <!-- <div class="number">
-                                            <h3>02</h3>
-                                        </div> -->
                                         <h5>+500000.00</h5>
                                         <p>Cerculating Supply</p>
-                                        <div class="slidingText2">
-                                            <h3>CSS Animation </h3>
-                                        </div>
                                     </li>
                                     <li>
-                                        <!-- <div class="number">
-                                            <h3>03</h3>
-                                        </div> -->
                                         <h5>+500.000 </h5>
                                         <p>Market Cap.</p>
-                                        <div class="slidingText2">
-                                            <h3>CSS Animation </h3>
-                                        </div>
                                     </li>
                                 </ul>
-
+                            </div>
+                            <div class="col-md-12">
+                                <section class="slider_section">
+                                    <div class="slider">
+                                        <div class="slide-track">
+                                            <div class="slide">
+                                                <h6> @user1 get ulkjalsdfas </h6>
+                                            </div>
+                                            <div class="slide">
+                                                <h6> @user1 get ulkjalsdfas </h6>
+                                            </div>
+                                            <div class="slide">
+                                                <h6> @user1 get ulkjalsdfas </h6>
+                                            </div>
+                                            <div class="slide">
+                                                <h6> @user1 get ulkjalsdfas </h6>
+                                            </div>
+                                            <div class="slide">
+                                                <h6> @user1 get ulkjalsdfas </h6>
+                                            </div>
+                                            <div class="slide">
+                                                <h6> @user1 get ulkjalsdfas </h6>
+                                            </div>
+                                            <div class="slide">
+                                                <h6> @user1 get ulkjalsdfas </h6>
+                                            </div>
+                                            <div class="slide">
+                                                <h6> @user1 get ulkjalsdfas </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
                             </div>
                             <div class="col-xl-12 col-md-12">
                                 <div class="banner-top__sale">
@@ -261,7 +268,9 @@
                                     </div>
 
                                     <div class="group-button justify-content-center">
-                                        <a href="#" class="btn-action style-5"><span>Buy Tokens now</span></a>
+                                        <a href="#" type="button" class="btn-action style-5" data-bs-toggle="offcanvas"
+                                            data-bs-target="#buyToken" aria-controls="buyToken"><span>Buy Tokens
+                                                now</span></a>
                                         <a href="#" class="btn-action-outline style-5"><span>White paper</span></a>
                                     </div>
                                 </div>
@@ -406,6 +415,82 @@
                             <p>+1 per tap for each level</p>
                             <h6><img src="assets/images/usdt.png" alt="" class="img-fluid">200</h6>
                             <button class="btn-action style-1">Got it</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- buy token offcanvas  -->
+    <div class="offcanvas offcanvas-bottom buy_popup " tabindex="-1" id="buyToken" aria-labelledby="buyTokenLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="mininge_confirmLabel"></h5>
+            <button type="button" class="btn_close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                    class="fas fa-times"></i></button>
+        </div>
+        <div class="offcanvas-body small">
+            <div class="confirmation_box">
+                <div class="row">
+                    <div class="col-md-6 m-auto">
+                        <div class="confirm_details">
+                            <div class="top_balance top">
+                                <p>Your USDT balance</p>
+                                <h4 class="text-center"><img src="assets/images/usdt.png" alt="" class="img-fluid img_g_coin"> 2500</h4>
+                            </div>
+                            <form action="" class="but_token_form">
+                                <div class=" mb-2">
+                                    <label for="">USDT <span>min purchase amount: 20 USDT</span> </label>
+                                    <div class="input_group">
+                                        <input type="text" class="form-control" value="20.00" placeholder="00.00">
+                                        <img src="assets/images/usdt.png" alt="" class="img-fluid img_g_coin">
+                                    </div>
+                                </div>                                
+                                <div class=" mb-3">
+                                    <h6>You will get </h6>
+                                    <div class="input_group">
+                                        <input type="text" class="form-control" disabled placeholder="00.00" value="10.00">
+                                        <img src="assets/images/gold_coin.png" alt="" class="img-fluid">
+                                    </div>
+                                </div>                               
+                                <button class="btn-action style-1">Confirm</button>
+                            </form>
+                            <div class="refer_members latest_buy text-start">
+                                <h6>Latest purchase</h6>
+                                <ul>
+                                    <li>
+                                        <strong>@user1 buy 100 OCN </strong>
+                                    </li>
+                                    <li>
+                                        <strong>@user1 buy 100 OCN </strong>
+                                    </li>
+                                    <li>
+                                        <strong>@user1 buy 100 OCN </strong>
+                                    </li>
+                                    <li>
+                                        <strong>@user1 buy 100 OCN </strong>
+                                    </li>
+                                    <li>
+                                        <strong>@user1 buy 100 OCN </strong>
+                                    </li>
+                                    <li>
+                                        <strong>@user1 buy 100 OCN </strong>
+                                    </li>
+                                    <li>
+                                        <strong>@user1 buy 100 OCN </strong>
+                                    </li>
+                                    <li>
+                                        <strong>@user1 buy 100 OCN </strong>
+                                    </li>
+                                    <li>
+                                        <strong>@user1 buy 100 OCN </strong>
+                                    </li>
+                                    <li>
+                                        <strong>@user1 buy 100 OCN </strong>
+                                    </li>
+                                </ul>
+                                
+                            </div>
                         </div>
                     </div>
                 </div>
